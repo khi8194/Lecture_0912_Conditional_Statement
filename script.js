@@ -15,8 +15,8 @@ else {
 }
 */
 
-const hour = new Date().getHours();
-console.log(hour);
+const hour = new Date().getHours()
+console.log(hour)
 
 //8-9 : lightblue
 //10-15 : orange
@@ -52,11 +52,11 @@ const dataArr = [
 	{ cond: hour >= 10 && hour < 16, color: "orange" },
 	{ cond: hour >= 16 && hour < 21, color: "pink" },
 	{ cond: hour >= 21 && hour < 25, color: "purple" }
-];
+]
 
 dataArr.forEach(data => {
-	if (data.cond) document.body.style.backgroundColor = data.color;
-});
+	if (data.cond) document.body.style.backgroundColor = data.color
+})
 
 // dataArr.forEach( data => data.cond && (document.body.style.backgroundColor = data.color));
 
